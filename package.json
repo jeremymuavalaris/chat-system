@@ -4,7 +4,6 @@
   "description": "Socket based chat system",
   "main": "ChatClient.js",
   "dependencies": {
-    "fs": "0.0.1-security",
     "ws": "2.3.1"
   },
   "devDependencies": {
