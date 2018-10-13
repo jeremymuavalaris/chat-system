@@ -152,7 +152,8 @@ function Log(message, skipMessage = false) {
 function RecursiveAsyncReadLine() {
     rl.question('Enter chat message: ', function (message) {
         if (message == 'exit') {
-            return rl.close(); //closing RL and returning from function.
+            rl.close(); //closing RL and returning from function.
+            process.exit();
         }
 
         if (!CheckIfCommand(message))
